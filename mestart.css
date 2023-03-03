@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #292929;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+nav.sticky {
+    padding: 5px 100px;
+    background: rgb(245, 245, 245);
+}
+.logo{
+    color: rgb(245, 245, 245);
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+.logo span {
+    color: rgb(74, 74, 211);
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+}
+nav ul li a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+nav ul li A:hover {
+    color:rgb(74, 74, 211) ;
+    transition: .5s;
+}
+.buton{
+    border: none;
+    background-color:rgb(74, 74, 211) ;
+    width: 100px;
+    height: 30px;
+    padding: 12px 30 px;
+    border-radius: 30px;
+    color: rgb(245, 245, 245);
+    font-weight: bolder;
+    transition: .4s;
+}
+.buton:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.Social a {
+    font-size: 20px;
+    color:rgb(245, 245, 245);
+    padding: 2px 6px;
+}
+.Social a:hover{
+    color:rgb(74, 74, 211) ;
+    transition: .5s;
+}
+.about::after{
+    content: "About";
+    font-size: 18px;
+    font-weight: bolder;
+    position: absolute;
+    line-height: 2.5;
+    left: 425px;
+    top: 28px;
+
+    transition: all 400ms;
+}
+.about:hover::after {
+    content: "Skills";
+    font-size: 18px;
+    font-weight: bolder;
+}
+.wrapper{
+    display: flex;
+    width: 83%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(245, 245, 245);
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 40px;
+    bottom: 10px;
+    background-color: rgb(74, 74, 211);
+}
+.etik{
+    display: block;
+    font-size: 5.5em;
+    font-weight: 890;
+    color:rgb(245, 245, 245);
+}
+.multiText{
+    color:rgb(74, 74, 211);
+    text-transform: capitalize;
+}
+.love{
+    display: block;
+    width: 90%;
+    font-size: 1em;
+    color: rgb(245, 245, 245);
+}
+.knopks{
+    width: 100%;
+    position: relative;
+    left: 100px;
+}
+.knopka{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 380;
+    color: rgb(245, 245, 245);
+    background-color: rgb(74, 74, 211);
+    padding: 8px 15px;
+    margin: 40px 7px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    transition: .4s
+}
+.knopka:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imgbox img {
+    position: relative;
+    height: 100%;
+    width: calc(130%-88px);
+    top: -30px;
+    right: -70px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50%{
+        right: -50px;
+        top: -45px;
+    }
+} 
+
+#about{
+    padding: 80xp 0;
+    margin-left: 00px;
+    margin-right: 50px;
+    color:rgb(245, 245, 245);
+    transition: all .25s linear;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #4b4b4b;
+}
+
+.about-col-2 {
+    flex-basis: 60%
+}
+.Subtitle{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+.me{
+    text-align: justify;
+    font-size: 17px;
+}
+.sub{
+    color: rgb(108, 108, 247);
+    font-size: 30px;
+    font-weight: bolder;
+    left: 50%;
+}
+.suba{
+    margin-top: 10px;
+    font-size: 26px;
+}
+.bacar ul li {
+    list-style: none;
+    font-size: 14px;
+}
+.bacar ul li span {
+    color: rgb(72, 72, 231);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.Subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(245, 245, 245);
+}
+.services-list div {
+    padding: 20px;
+    font-weight: 300;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    color: rgb(72, 72, 231);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);opacity: 70%;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.services-list div:hover{
+    transform: translateY(-20px);
+}
+
+#portolio {
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.work{
+    left: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
