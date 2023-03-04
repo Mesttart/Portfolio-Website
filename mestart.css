@@ -6,9 +6,6 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
-}
 nav{
     display: flex;
     align-items: center;
@@ -29,7 +26,7 @@ a{
     text-decoration: none;
 }
 .logo span {
-    color: rgb(74, 74, 211);
+    color: rgb(72, 72, 231);
 }
 nav ul li {
     list-style-type: none;
@@ -43,12 +40,12 @@ nav ul li a {
     font-size: 18px;
 }
 nav ul li A:hover {
-    color:rgb(74, 74, 211) ;
+    color:rgb(72, 72, 231);
     transition: .5s;
 }
 .buton{
     border: none;
-    background-color:rgb(74, 74, 211) ;
+    background-color:rgb(72, 72, 231);
     width: 100px;
     height: 30px;
     padding: 12px 30 px;
@@ -67,7 +64,7 @@ nav ul li A:hover {
     padding: 2px 6px;
 }
 .Social a:hover{
-    color:rgb(74, 74, 211) ;
+    color:rgb(72, 72, 231);
     transition: .5s;
 }
 .about::after{
@@ -112,7 +109,7 @@ nav ul li A:hover {
     height: 3px;
     width: 40px;
     bottom: 10px;
-    background-color: rgb(74, 74, 211);
+    background-color: rgb(72, 72, 231);
 }
 .etik{
     display: block;
@@ -121,7 +118,7 @@ nav ul li A:hover {
     color:rgb(245, 245, 245);
 }
 .multiText{
-    color:rgb(74, 74, 211);
+    color:rgb(72, 72, 231);
     text-transform: capitalize;
 }
 .love{
@@ -142,7 +139,7 @@ nav ul li A:hover {
     font-size: 22px;
     font-weight: 380;
     color: rgb(245, 245, 245);
-    background-color: rgb(74, 74, 211);
+    background-color: rgb(72, 72, 231);
     padding: 8px 15px;
     margin: 40px 7px;
     letter-spacing: 2px;
@@ -204,6 +201,7 @@ nav ul li A:hover {
     flex-basis: 60%
 }
 .Subtitle{
+    margin-left: 10px;
     font-size: 50px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -295,4 +293,172 @@ nav ul li A:hover {
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgb(72, 72, 231));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    /* transition: .4s; */
+    z-index: 1;
+}
+.layer h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100% ;
+    background: transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.layer p {
+    color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* .layer:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+} */
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+#faicon{
+    color: rgb(72, 72, 231);
+    margin-top: 200px;
+    margin-left: 166px;
+    text-decoration: none;
+    font-size: 24;
+    height: 60px;
+    background-color: rgb(245, 245, 245);
+    opacity: 400%;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+}
+.seebtn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(72, 72, 231);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    transition: 0.5s;
+}
+.seebtn:hover{
+    background: rgb(72, 72, 231);
+}
+
+.contact-left{
+    color: rgb(245, 245, 245);
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 65%;
+}
+.contact-left p {
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: rgb(72, 72, 231);
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(245, 245, 245);
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(72, 72, 231);
+    transform: translateY(-5px);
+    background: transparent;
+}
+
+.seebtn.btn2{
+    display: inline-block;
+    margin-left: 10px;
+    background: rgb(72, 72, 231);
+}
+
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea{
+    width: 95%;
+    border: 0;
+    outline: none;
+    background: #4b4b4b;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    border-radius: 6px;
+}
+.seebtn.btn3{
+    margin-top: 5px;
+    display: inline-block;
+    background: rgb(72, 72, 231);
+    cursor: pointer;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #4b4b4b;
+    font-weight: 300;
+    margin-top: 20px;
+    color: rgb(245, 245, 245);
+}
+.copyright p{
+    background: transparent;
+}
+
+/* ------ css for small screes---- */
+@media only screen and (max-with:600px){
+    
+}
+
